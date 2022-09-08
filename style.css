@@ -11,41 +11,93 @@
     text-align: center;
 }
 
+
 .main-content {
-    width: 95%;
+    width: 96%;
     height: 100%;
     margin: auto;
+    padding: auto;  
 }
 
 .main-content_section--one,
 .main-content_section--two,
 .main-content_section--three {
+    position: relative;
     background-color: gray;
     margin:2rem auto;
-    padding:1rem;
     width: 80%;
+    overflow: hidden;
+    border: black solid 2px;
 }
 
 .clearfix{
     clear: both;
 }
 
+.section-title{
+    width: 100%;
+    text-align: center;
+    padding: .5rem 0;
+    border: black solid ;
+    border-width: 0px 0px 2px 0px;
+}
+
+.main-content_section--one > .section-title{
+    background-color: lightcoral;
+}
+
+.main-content_section--two > .section-title{
+    background-color: lightblue;
+}
+
+.main-content_section--three > .section-title{
+    background-color: lightgreen;
+}
+
+p {
+    padding: 1rem;
+}
+
+
 @media (min-width:768px){
-    .main-content_section--one,
-    .main-content_section--two{
-        background-color: gray;
-        margin:1rem;
-        padding:1rem;
-        width: 45%;
-        float: left;
+    p {
+        padding-top: 40px;
     }
+    
+    .main-content_section--one,
+    .main-content_section--two {
+        margin:1%;
+        width: 48%;
+        float: left;
+    }   
 
     .main-content_section--three {
-        background-color: gray;
-        margin:1rem;
-        padding:1rem;
-        width: 94%;
+        margin: 1%;
+        width: 98%;
         float:left;
+    }
+
+    .section-title{
+        display: inline-block;
+        position: absolute;
+        padding: .2rem 1rem;
+        width: 150px;
+        border-width: 0px 0px 2px 2px;
+    }
+
+    .main-content_section--one > .section-title{
+        top:0%;
+        right:0%;
+    }
+    
+    .main-content_section--two > .section-title{
+        top:0%;
+        right:0%;
+    }
+    
+    .main-content_section--three > .section-title{
+        top:0%; 
+        right:0%; 
     }
 }
 
@@ -53,9 +105,7 @@
     .main-content_section--one,
     .main-content_section--two,
     .main-content_section--three {
-        background-color: gray;
-        margin:1rem;
-        padding:1rem;
-        width: 30%;
+        margin:1%;
+        width: 31.3%;
     }
 }
