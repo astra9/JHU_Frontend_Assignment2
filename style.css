@@ -7,24 +7,55 @@
 .main-header {
     width:100vw;
     height:10vh;
-    padding:1rem;
+    padding:1rem 1rem 3rem 1rem;
     text-align: center;
 }
 
 .main-content {
-    width:100%;
+    width: 95%;
+    height: 100%;
+    margin: auto;
 }
 
 .main-content_section--one,
 .main-content_section--two,
 .main-content_section--three {
     background-color: gray;
-    margin:1rem;
+    margin:2rem auto;
     padding:1rem;
-    width: 30%;
-    float:left;
+    width: 80%;
 }
 
 .clearfix{
     clear: both;
+}
+
+@media (min-width:768px){
+    .main-content_section--one,
+    .main-content_section--two{
+        background-color: gray;
+        margin:1rem;
+        padding:1rem;
+        width: 45%;
+        float: left;
+    }
+
+    .main-content_section--three {
+        background-color: gray;
+        margin:1rem;
+        padding:1rem;
+        width: 94%;
+        float:left;
+    }
+}
+
+@media (min-width:992px){
+    .main-content_section--one,
+    .main-content_section--two,
+    .main-content_section--three {
+        background-color: gray;
+        margin:1rem;
+        padding:1rem;
+        width: 30%;
+    }
 }
