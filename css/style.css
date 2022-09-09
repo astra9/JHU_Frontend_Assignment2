@@ -62,6 +62,7 @@
     padding: .5rem 1rem;
     border: black solid;
     border-width: 0px 0px 2px 0px;
+    font-size: 1.25rem;
 }
 
 .section-title {
@@ -107,6 +108,7 @@
     .main-header__tile--desktop {
         display: block;
         padding-top: .5rem;
+        font-size: 1.75rem;
     }
 
     .main-header {
@@ -137,6 +139,7 @@
         width: 150px;
         border: black solid;
         border-width: 0px 0px 2px 2px;  
+        font-size: 1.25rem;
     }
 
     .main-content_section--one>.section-title {
